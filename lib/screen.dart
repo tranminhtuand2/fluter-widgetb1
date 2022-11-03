@@ -6,6 +6,7 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-    wight:10,);
+      height: 10,
+    );
   }
 }
