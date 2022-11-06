@@ -38,6 +38,34 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  //initState
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
+  //didChangeDependencies
+  @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    super.didChangeDependencies();
+  }
+
+  //dispose
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  //deactivate
+  @override
+  void deactivate() {
+    // TODO: implement deactivate
+    super.deactivate();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
