@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget/baitap1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: baitap1(),
     );
   }
 }
@@ -118,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButton(
                     onPressed: () {
                       ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('nut da duoc bam')));
+                          const SnackBar(content: Text('nut da duoc bam')));
 
                       setState(() {
                         demo.text;
@@ -127,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text("click me!")),
                 Text(
                   demo.text,
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
               ],
             ),
@@ -141,7 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
           setState(() {
             _incrementCounter();
             if (_counter % 2 == 0) {
-              color = Color.fromARGB(255, 166, 40, 40);
+              color = const Color.fromARGB(255, 166, 40, 40);
             } else {
               color = Colors.amber;
             }
