@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widget/baitap1.dart';
+import 'package:widget/bt2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: baitap1(),
+      // home: baitap1(),
+      home: const bt2(),
     );
   }
 }
