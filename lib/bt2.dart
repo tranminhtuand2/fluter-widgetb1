@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:widget/demolistview.dart';
 
 class bt2 extends StatefulWidget {
   const bt2({super.key});
@@ -121,6 +122,12 @@ class _bt2State extends State<bt2> {
                     ElevatedButton(
                       onPressed: () {
                         print("page 2");
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => listviewdemo(),
+                          ),
+                        );
                       },
                       child: const Text("[page 2]"),
                     ),
