@@ -89,16 +89,34 @@ class _listviewdemoState extends State<listviewdemo> {
   Widget Listbuider() {
     return Container(
       height: 200,
-      child: ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: entries.length,
-          itemBuilder: (BuildContext context, int index) {
-            return Container(
-              height: 50,
-              color: Colors.green[colorCodes[index]],
-              child: Center(child: Text('Entry ${entries[index]}')),
-            );
-          }),
+      //list view builder
+      // child: ListView.builder(
+      //   padding: const EdgeInsets.all(8),
+      //   itemCount: entries.length,
+      //   itemBuilder: (BuildContext context, int index) {
+      //     return Container(
+      //       height: 50,
+      //       color: Colors.green[colorCodes[index]],
+      //       child: Center(child: Text('Entry ${entries[index]}')),
+      //     );
+      //   },
+
+      // ),
+      //list view separter
+      child: ListView.separated(
+        padding: const EdgeInsets.all(8),
+        itemCount: entries.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Container(
+            height: 50,
+            color: Colors.green[colorCodes[index]],
+            child: Center(child: Text('Entry ${entries[index]}')),
+          );
+        },
+        separatorBuilder: (context, index) {
+          return const Divider();
+        },
+      ),
     );
   }
 }
